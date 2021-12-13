@@ -12,9 +12,12 @@ namespace RomanNumeralAddition
         private string numeral = "";
         private int numberValue = 0;
 
-        public RomanNumeral(string numeralIn)
+        public RomanNumeral()
         {
-            numeral = numeralIn;
+        }
+        public RomanNumeral(string numeralString)
+        {
+            numeral = numeralString;
 
             numberValue = Calculator.createNumberValue(numeral);
         }

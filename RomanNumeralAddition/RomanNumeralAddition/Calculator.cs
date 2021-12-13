@@ -149,6 +149,12 @@ namespace RomanNumeralAddition
         {
             int length = placements.Length;
             int value = 0;
+
+            if(length == 1)
+            {
+                return placements[0];
+            }
+
             for(int i = 0; i < length; i++)
             {
                 if(placements[i] == 0)
