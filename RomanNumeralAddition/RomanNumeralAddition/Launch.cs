@@ -20,15 +20,22 @@ namespace RomanNumeralAddition
             Console.WriteLine("Please enter the second numeral");
             numeralTwo = Console.ReadLine();
 
+            Console.WriteLine();
+
             RomanNumeral one = new RomanNumeral(numeralOne);
             RomanNumeral two = new RomanNumeral(numeralTwo);
 
-            output.NumberValue = (one.NumberValue + two.NumberValue);
+            output.NumberValue = one.NumberValue + two.NumberValue;
 
             Console.WriteLine("The total number value is:");
             Console.WriteLine(output.NumberValue);
             Console.WriteLine("The total numeral value is:");
             Console.WriteLine(output.Numeral);
+
+            Console.WriteLine();
+            Console.WriteLine("Press enter to exit");
+            string end = Console.ReadLine();
+
             
         }
     }

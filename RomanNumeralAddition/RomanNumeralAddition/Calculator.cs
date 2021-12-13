@@ -40,67 +40,67 @@ namespace RomanNumeralAddition
             int numberValue = number;
             while(numberValue > 0)
             {
-                if(numberValue > 1000)
+                if(numberValue >= 1000)
                 {
                     numeralValue += "M";
                     numberValue -= 1000;
                 }
-                else if(numberValue > 900)
+                else if(numberValue >= 900)
                 {
                     numeralValue += "CM";
                     numberValue -= 900;
                 }
-                else if (numberValue > 500)
+                else if (numberValue >= 500)
                 {
                     numeralValue += "D";
                     numberValue -= 500;
                 }
-                else if (numberValue > 400)
+                else if (numberValue >= 400)
                 {
                     numeralValue += "CD";
                     numberValue -= 400;
                 }
-                else if (numberValue > 100)
+                else if (numberValue >= 100)
                 {
                     numeralValue += "C";
                     numberValue -= 100;
                 }
-                else if (numberValue > 90)
+                else if (numberValue >= 90)
                 {
                     numeralValue += "XC";
                     numberValue -= 90;
                 }
-                else if (numberValue > 50)
+                else if (numberValue >= 50)
                 {
                     numeralValue += "L";
                     numberValue -= 50;
                 }
-                else if (numberValue > 40)
+                else if (numberValue >= 40)
                 {
                     numeralValue += "XL";
                     numberValue -= 40;
                 }
-                else if (numberValue > 10)
+                else if (numberValue >= 10)
                 {
                     numeralValue += "X";
                     numberValue -= 10;
                 }
-                else if (numberValue > 9)
+                else if (numberValue >= 9)
                 {
                     numeralValue += "IX";
                     numberValue -= 9;
                 }
-                else if (numberValue > 5)
+                else if (numberValue >= 5)
                 {
                     numeralValue += "V";
                     numberValue -= 5;
                 }
-                else if (numberValue > 4)
+                else if (numberValue >= 4)
                 {
                     numeralValue += "IV";
                     numberValue -= 900;
                 }
-                else if (numberValue > 1)
+                else if (numberValue >= 1)
                 {
                     numeralValue += "I";
                     numberValue -= 1;
@@ -150,14 +150,14 @@ namespace RomanNumeralAddition
             int length = placements.Length;
             int value = 0;
 
-            if(length == 1)
+            if (length == 1)
             {
                 return placements[0];
             }
 
-            for(int i = 0; i < length; i++)
+            for (int i = 0; i < length - 1; i++)
             {
-                if(placements[i] == 0)
+                if (placements[i] == 0)
                 {
                 }
                 else if(placements[i] < placements[i + 1])
