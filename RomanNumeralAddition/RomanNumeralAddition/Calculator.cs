@@ -13,7 +13,7 @@ namespace RomanNumeralAddition
 
         }
 
-        public int createValue(string numeral)
+        public int createNumberValue(string numeral)
         {
             int length = numeral.Length;
             int value = 0;
@@ -30,7 +30,8 @@ namespace RomanNumeralAddition
                 numberPlacements[i] = convertRomanToNumbers(numeralPlacements[i]);
             }
 
-            value = 
+            value = calculateNumbersToNumbers(numberPlacements);
+            return value;
 
         }
 
@@ -73,6 +74,7 @@ namespace RomanNumeralAddition
         public int calculateNumbersToNumbers(int[] placements)
         {
             int length = placements.Length;
+            int value = 0;
             for(int i = 0; i < length; i++)
             {
                 if(placements[i] == 0)
@@ -84,6 +86,12 @@ namespace RomanNumeralAddition
                     placements[i + 1] = 0;
                 }
             }
+            
+            foreach(int placement in placements)
+            {
+                value = value + placement;
+            }
+            return value;
         }
 
     }

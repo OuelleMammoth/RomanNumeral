@@ -1,1 +1,6 @@
 C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\obj\Debug\RomanNumeralAddition.csprojAssemblyReference.cache
+C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\bin\Debug\RomanNumeralAddition.exe.config
+C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\bin\Debug\RomanNumeralAddition.exe
+C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\bin\Debug\RomanNumeralAddition.pdb
+C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\obj\Debug\RomanNumeralAddition.exe
+C:\Users\fire2\source\repos\RomanNumeralAddition\RomanNumeralAddition\obj\Debug\RomanNumeralAddition.pdb

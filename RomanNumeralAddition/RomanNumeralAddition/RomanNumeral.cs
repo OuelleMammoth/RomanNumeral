@@ -16,7 +16,7 @@ namespace RomanNumeralAddition
         {
             this.numeral = numeral;
 
-            value = Calculator.createValue(numeral);
+            value = Calculator.createNumberValue(numeral);
         }
 
         
