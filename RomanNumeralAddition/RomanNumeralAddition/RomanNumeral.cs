@@ -8,6 +8,17 @@ namespace RomanNumeralAddition
 {
     class RomanNumeral
     {
+        Calculator Calculator = new Calculator();
+        string numeral = "";
+        int value = 0;
 
+        public RomanNumeral(string numeral)
+        {
+            this.numeral = numeral;
+
+            value = Calculator.createValue(numeral);
+        }
+
+        
     }
 }
