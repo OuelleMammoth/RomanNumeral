@@ -8,8 +8,9 @@ namespace RomanNumeralAddition
 {
     class Launch
     {
-        static void Main(string[] args)
+        static void Main()
         {
+            
         }
     }
 }

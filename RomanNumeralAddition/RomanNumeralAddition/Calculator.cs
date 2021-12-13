@@ -10,7 +10,6 @@ namespace RomanNumeralAddition
     {
         public Calculator()
         {
-
         }
 
         public int createNumberValue(string numeral)
@@ -35,7 +34,82 @@ namespace RomanNumeralAddition
 
         }
 
-        public int convertRomanToNumbers(string numeral)
+        public string createNumeralValue(int number)
+        {
+            string numeralValue = "";
+            int numberValue = number;
+            while(numberValue > 0)
+            {
+                if(numberValue > 1000)
+                {
+                    numeralValue += "M";
+                    numberValue -= 1000;
+                }
+                else if(numberValue > 900)
+                {
+                    numeralValue += "CM";
+                    numberValue -= 900;
+                }
+                else if (numberValue > 500)
+                {
+                    numeralValue += "D";
+                    numberValue -= 500;
+                }
+                else if (numberValue > 400)
+                {
+                    numeralValue += "CD";
+                    numberValue -= 400;
+                }
+                else if (numberValue > 100)
+                {
+                    numeralValue += "C";
+                    numberValue -= 100;
+                }
+                else if (numberValue > 90)
+                {
+                    numeralValue += "XC";
+                    numberValue -= 90;
+                }
+                else if (numberValue > 50)
+                {
+                    numeralValue += "L";
+                    numberValue -= 50;
+                }
+                else if (numberValue > 40)
+                {
+                    numeralValue += "XL";
+                    numberValue -= 40;
+                }
+                else if (numberValue > 10)
+                {
+                    numeralValue += "X";
+                    numberValue -= 10;
+                }
+                else if (numberValue > 9)
+                {
+                    numeralValue += "IX";
+                    numberValue -= 9;
+                }
+                else if (numberValue > 5)
+                {
+                    numeralValue += "V";
+                    numberValue -= 5;
+                }
+                else if (numberValue > 4)
+                {
+                    numeralValue += "IV";
+                    numberValue -= 900;
+                }
+                else if (numberValue > 1)
+                {
+                    numeralValue += "I";
+                    numberValue -= 1;
+                }
+            }
+            return numeralValue;
+        }
+
+        private int convertRomanToNumbers(string numeral)
         {
             if (numeral == "I")
             {
@@ -71,7 +145,7 @@ namespace RomanNumeralAddition
             }
         }
 
-        public int calculateNumbersToNumbers(int[] placements)
+        private int calculateNumbersToNumbers(int[] placements)
         {
             int length = placements.Length;
             int value = 0;
